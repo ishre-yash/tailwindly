@@ -18,7 +18,7 @@ export default function Home() {
 
                         <p className="order-2 leading-relaxed mb-8">Over 50+ professionally designed, fully responsive.<br />Tailwindly is a powerful frontend library of tailwind components enhanced by vanilla js. It helps you build interfaces with advanced interactions and animations.</p>
                         <div className="order-3 w-full text-center grid grid-cols-1 gap-3 sm:flex sm:gap-0 sm:space-x-6">
-                            <a href="/preview" className="text-sm font-semibold bg-white text-gray-900 py-3 px-4 rounded-lg hover:bg-gray-300 hover:text-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Try
+                            <a href="#preview" className="text-sm font-semibold bg-white text-gray-900 py-3 px-4 rounded-lg hover:bg-gray-300 hover:text-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Try
                                 it out</a>
                             <a href="#components" className="text-sm font-semibold bg-gray-800 text-gray-300 py-3 px-4 rounded-lg hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-700 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Browse
                                 everything</a>
@@ -32,21 +32,21 @@ export default function Home() {
                 </div>
                 <div className="mt-16 md:mt-0 relative max-w-screen-sm mx-auto lg:mx-0 lg:max-w-none grid lg:grid-cols-3 gap-10 lg:gap-8 text-sm">
                     <div className="flex space-x-6 rounded-md hover:-translate-y-1 hover:shadow-lg transition duration-200 group dark:hover:bg-gray-700 border-2 border-gray-200 dark:border-slate-800 p-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-auto" fill="currentColor" data-name="Layer 1" viewBox="0 0 24 24"><path d="M2.5,10.56l9,5.2a1,1,0,0,0,1,0l9-5.2a1,1,0,0,0,0-1.73l-9-5.2a1,1,0,0,0-1,0l-9,5.2a1,1,0,0,0,0,1.73ZM12,5.65l7,4-7,4.05L5,9.69Zm8.5,7.79L12,18.35,3.5,13.44a1,1,0,0,0-1.37.36,1,1,0,0,0,.37,1.37l9,5.2a1,1,0,0,0,1,0l9-5.2a1,1,0,0,0,.37-1.37A1,1,0,0,0,20.5,13.44Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-auto text-sky-500" fill="currentColor" data-name="Layer 1" viewBox="0 0 24 24"><path d="M2.5,10.56l9,5.2a1,1,0,0,0,1,0l9-5.2a1,1,0,0,0,0-1.73l-9-5.2a1,1,0,0,0-1,0l-9,5.2a1,1,0,0,0,0,1.73ZM12,5.65l7,4-7,4.05L5,9.69Zm8.5,7.79L12,18.35,3.5,13.44a1,1,0,0,0-1.37.36,1,1,0,0,0,.37,1.37l9,5.2a1,1,0,0,0,1,0l9-5.2a1,1,0,0,0,.37-1.37A1,1,0,0,0,20.5,13.44Z"/></svg>
                         <div>
                             <h2 className="font-semibold text-black dark:text-white mb-2">50+ Examples</h2>
                             <p className="leading-normal">Beautifully designed, expertly crafted components that follow all accessibility best practices and are easy to customize.</p>
                         </div>
                     </div>
                     <div className="flex space-x-6 hover:-translate-y-1 hover:shadow-lg transition duration-200 group dark:hover:bg-gray-700 border-2 border-gray-200 dark:border-slate-800 p-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-auto" fill="currentColor" data-name="Layer 1" viewBox="0 0 24 24"><path d="M6,6A2,2,0,0,1,8,4,1,1,0,0,0,8,2,4,4,0,0,0,4,6V9a2,2,0,0,1-2,2,1,1,0,0,0,0,2,2,2,0,0,1,2,2v3a4,4,0,0,0,4,4,1,1,0,0,0,0-2,2,2,0,0,1-2-2V15a4,4,0,0,0-1.38-3A4,4,0,0,0,6,9Zm16,5a2,2,0,0,1-2-2V6a4,4,0,0,0-4-4,1,1,0,0,0,0,2,2,2,0,0,1,2,2V9a4,4,0,0,0,1.38,3A4,4,0,0,0,18,15v3a2,2,0,0,1-2,2,1,1,0,0,0,0,2,4,4,0,0,0,4-4V15a2,2,0,0,1,2-2,1,1,0,0,0,0-2Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-auto text-sky-500" fill="currentColor" data-name="Layer 1" viewBox="0 0 24 24"><path d="M6,6A2,2,0,0,1,8,4,1,1,0,0,0,8,2,4,4,0,0,0,4,6V9a2,2,0,0,1-2,2,1,1,0,0,0,0,2,2,2,0,0,1,2,2v3a4,4,0,0,0,4,4,1,1,0,0,0,0-2,2,2,0,0,1-2-2V15a4,4,0,0,0-1.38-3A4,4,0,0,0,6,9Zm16,5a2,2,0,0,1-2-2V6a4,4,0,0,0-4-4,1,1,0,0,0,0,2,2,2,0,0,1,2,2V9a4,4,0,0,0,1.38,3A4,4,0,0,0,18,15v3a2,2,0,0,1-2,2,1,1,0,0,0,0,2,4,4,0,0,0,4-4V15a2,2,0,0,1,2-2,1,1,0,0,0,0-2Z"/></svg>
                         <div>
                             <h2 className="font-semibold text-black dark:text-white mb-2"><a href="/documentation#using-react">React, and HTML</a></h2>
                             <p className="leading-normal">Accessible, interactive examples for React, plus vanilla HTML if you’d rather write any necessary JS yourself.</p>
                         </div>
                     </div>
                     <div className="flex space-x-6 hover:-translate-y-1 hover:shadow-lg transition duration-200 group dark:hover:bg-gray-700 border-2 border-gray-200 dark:border-slate-800 p-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M8.18,4h2.1a1,1,0,0,0,0-2H8.18a1,1,0,0,0,0,2ZM3,11.28a1,1,0,0,0,1-1V8.18a1,1,0,0,0-2,0v2.1A1,1,0,0,0,3,11.28ZM14.46,4a1,1,0,0,0,2,0V3a1,1,0,0,0-1-1h-1a1,1,0,0,0,0,2ZM21,7.54H16.46a1,1,0,1,0-2,0H8.54a1,1,0,0,0-1,1v5.92a1,1,0,1,0,0,2V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V8.54A1,1,0,0,0,21,7.54ZM20,20H9.54V15.47h0V9.54H20ZM4,2H3A1,1,0,0,0,2,3V4A1,1,0,0,0,4,4,1,1,0,0,0,4,2ZM4,14.46a1,1,0,0,0-2,0v1a1,1,0,0,0,1,1H4a1,1,0,0,0,0-2Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-auto text-sky-500" fill="currentColor" viewBox="0 0 24 24"><path d="M8.18,4h2.1a1,1,0,0,0,0-2H8.18a1,1,0,0,0,0,2ZM3,11.28a1,1,0,0,0,1-1V8.18a1,1,0,0,0-2,0v2.1A1,1,0,0,0,3,11.28ZM14.46,4a1,1,0,0,0,2,0V3a1,1,0,0,0-1-1h-1a1,1,0,0,0,0,2ZM21,7.54H16.46a1,1,0,1,0-2,0H8.54a1,1,0,0,0-1,1v5.92a1,1,0,1,0,0,2V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V8.54A1,1,0,0,0,21,7.54ZM20,20H9.54V15.47h0V9.54H20ZM4,2H3A1,1,0,0,0,2,3V4A1,1,0,0,0,4,4,1,1,0,0,0,4,2ZM4,14.46a1,1,0,0,0-2,0v1a1,1,0,0,0,1,1H4a1,1,0,0,0,0-2Z"/></svg>
                         <div>
                             <h2 className="font-semibold text-black dark:text-white mb-2">Fully Responsive</h2>
                             <p className="leading-normal">Every example is fully responsive and carefully designed and implemented to look great at any screen size.</p>
@@ -61,7 +61,7 @@ export default function Home() {
             </svg>
         </div>
 
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 space-y-8 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 space-y-8 bg-gray-50 dark:bg-slate-800" id='preview'>
 
             <section className="divide-y divide-gray-200" >
                 <div className="pb-6 sm:flex sm:items-center sm:justify-between sm:flex-wrap">
@@ -71,17 +71,17 @@ export default function Home() {
                 <div className="grid grid-cols-3 xl:grid-cols-4 py-8 gap-x-8 gap-y-6">
                     <h3 className="text-gray-900 dark:text-gray-100 font-semibold col-span-3 xl:col-span-1">Components</h3>
                     <div className="col-span-3 grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-y-8 lg:gap-x-8">
-                        <a href="/components/sections/hero.html" className="group relative bg-white rounded-lg shadow-sm overflow-hidden ring-1 ring-black ring-opacity-5">
-                            <div className="relative bg-gray-100 pt-[50%] overflow-hidden">
+                        <a href="/components/sections/hero.html" className="group relative bg-white dark:bg-slate-900 rounded-lg shadow-sm overflow-hidden ring-1 ring-black ring-opacity-5 drop-shadow-sm hover:shadow-sky-500/75">
+                            <div className="relative bg-gray-100 dark:bg-gray-700 pt-[50%] overflow-hidden">
                                 <div className="absolute inset-0 w-full h-full rounded-t-lg overflow-hidden">
                                     <img src="/home/design.svg" alt="" className="absolute inset-0 w-full h-full" />
                                 </div>
                             </div>
                             <div className="py-3 px-4">
-                                <p className="text-sm font-medium text-gray-900 mb-1">
+                                <p className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-1">
                                     Hero Sections
                                 </p>
-                                <p className="text-xs font-medium text-gray-500">1 components</p>
+                                <p className="text-xs font-medium text-gray-500 dark:text-gray-200">1 components</p>
                             </div>
                         </a>
 
