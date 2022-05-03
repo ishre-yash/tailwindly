@@ -7,7 +7,7 @@ function NavBar() {
 
   return (
     <>
-      <header className="bg-gray-100 dark:bg-gray-900 flex-none relative z-50 text-sm leading-6 font-medium text-gray-900 dark:text-gray-100 pt-5">
+      <header className=" bg-gray-100 dark:bg-gray-900 flex-none relative z-50 text-sm leading-6 font-medium text-gray-900 dark:text-gray-100 py-4">
         <nav className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center flex-wrap sm:flex-nowrap  ">
             <Link href={"/"}>
