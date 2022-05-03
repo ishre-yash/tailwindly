@@ -7,8 +7,8 @@ export default function Home() {
         <title>Tailwindly - HOME</title>
         <meta name="description" content="Tailwindly is a powerful frontend library of tailwind components enhanced by vanilla js. It helps you build interfaces with advanced interactions and animations." />
       </Head>
-      <main className="container mx-auto flex-auto ">
-
+      <main className="flex-auto ">
+    <section className='container mx-auto'>
         <div className="overflow-hidden text-gray-900 dark:text-gray-300  -mt-32 pt-32">
             <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-9 xl:pt-20 pb-12">
                 <div className="sm:mb-24 xl:mb-32 lg:flex">
@@ -18,10 +18,9 @@ export default function Home() {
 
                         <p className="order-2 leading-relaxed mb-8">Over 50+ professionally designed, fully responsive.<br />Tailwindly is a powerful frontend library of tailwind components enhanced by vanilla js. It helps you build interfaces with advanced interactions and animations.</p>
                         <div className="order-3 w-full text-center grid grid-cols-1 gap-3 sm:flex sm:gap-0 sm:space-x-6">
-                            <a href="#preview" className="text-sm font-semibold bg-white text-gray-900 py-3 px-4 rounded-lg hover:bg-gray-300 hover:text-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Try
+                            <a href="#preview" className="text-sm font-semibold bg-white text-gray-900 py-3 px-4 rounded-lg hover:bg-gray-300 hover:text-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 ">Try
                                 it out</a>
-                            <a href="#components" className="text-sm font-semibold bg-gray-800 text-gray-300 py-3 px-4 rounded-lg hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-700 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Browse
-                                everything</a>
+                            
                         </div>
                     </div>
                     <div className="relative max-w-screen-sm mx-auto lg:max-w-none lg:-ml-12 lg:mr-0 xl:-ml-6">
@@ -55,15 +54,17 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        
+        </section>
         <div className="bg-gray-50 dark:bg-slate-800">
             <svg data-name="Layer 1" className="text-gray-100 dark:text-slate-900" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
             </svg>
         </div>
 
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 space-y-8 bg-gray-50 dark:bg-slate-800" id='preview'>
+        <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-24 space-y-8 bg-gray-50 dark:bg-slate-800" id='preview'>
 
-            <section className="divide-y divide-gray-200" >
+            <section className="container mx-au divide-y divide-gray-200" >
                 <div className="pb-6 sm:flex sm:items-center sm:justify-between sm:flex-wrap">
                     <h2 className="text-2xl font-extrabold text-gray-900 dark:text-gray-100">Free components</h2>
                     <p className="w-full flex-none text-sm text-gray-500 dark:text-gray-500 mt-2">Start building your next project with an awesom components build with utilities</p>

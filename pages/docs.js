@@ -7,8 +7,8 @@ function docs() {
       <div className='bg-gray-50 lg:bg-transparent -mx-4 sm:-mx-6 lg:mx-0 py-12 sm:py-16 px-4 sm:px-6 lg:pl-0 lg:pr-8'>
         <nav className='text-sm max-w-[37.5rem] mx-auto lg:max-w-none lg:mx-0 relative lg:sticky lg:top-10'>
           <ul className='space-y-3'>
-            <li className='ml-4'>Getting set up</li>
-            <li className='ml-4'>HELLO</li>
+            <li className='block border-l pl-4 -ml-px text-sky-500 border-current font-semibold text-lg dark:text-sky-400'>On this page</li>
+            <li className='block border-l pl-4 -ml-px hover:text-sky-500 border-current font-medium hover:dark:text-sky-400'>Requirements</li>
 
           </ul>
         </nav>
@@ -18,6 +18,8 @@ function docs() {
         <div className='relative py-16 lg:px-16'>
           <div className='prose prose-sm max-w-[37.5rem] mx-auto'>
           Getting set up
+          <div className='text-lg font-bold'>Requirements</div>
+All of the components in Tailwindly are designed for Tailwind CSS v3. To make sure that you are on the latest version of Tailwind, update via npm:
           </div>
         </div>
       </div>
