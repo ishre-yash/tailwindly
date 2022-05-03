@@ -47,10 +47,11 @@ function NavBar() {
               </Link>
               <Link href={""}>
                 <a className="group border-l pl-6 border-gray-700 hover:text-sky-400 flex items-center">
+                
                   <button
                     aria-label="Toggle Dark Mode"
                     type="button"
-                    className="w-5 h-5 md:w-5 md:h-5 flex items-center "
+                    className="w-5 h-5 md:w-5 md:h-5 flex items-center  "
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
