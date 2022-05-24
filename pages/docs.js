@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import hljs from "highlight.js/lib/core";
-import bash from "highlight.js/lib/languages/bash";
+
 function docs() {
   hljs.registerLanguage("bash", bash);
   return (
@@ -54,7 +53,7 @@ function docs() {
                   it will be noted in a comment at the top of the example.
                 </p>
                 <p className="my-2">
-                  If you're new to Tailwind CSS, you'll want to{" "}
+                  If you&apos;re new to Tailwind CSS, you&apos; ll want to{" "}
                   <a
                     className="font-semibold text-sky-500"
                     href="https://tailwindcss.com/docs"
