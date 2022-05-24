@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 
 function docs() {
-  hljs.registerLanguage("bash", bash);
   return (
     <>
       <Head>
