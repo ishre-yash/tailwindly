@@ -72,7 +72,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative mx-auto mt-16 grid max-w-screen-sm gap-10 text-sm md:mt-0 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
-                <div className="group flex space-x-6 rounded-md border-2 border-gray-200 p-4 transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:hover:bg-gray-700">
+                <div className="group flex space-x-6 rounded-md border-2 border-gray-200 p-4 transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:border-gray-800 dark:hover:bg-gray-700">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-16 w-auto text-sky-500"
@@ -93,7 +93,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="group flex space-x-6 border-2 border-gray-200 p-4 transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:hover:bg-gray-700">
+                <div className="group flex space-x-6 border-2 border-gray-200 p-4 transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:border-gray-800 dark:hover:bg-gray-700">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-16 w-auto text-sky-500"
@@ -113,7 +113,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="group flex space-x-6 border-2 border-gray-200 p-4 transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:hover:bg-gray-700">
+                <div className="group flex space-x-6 border-2 border-gray-200 p-4 transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:border-gray-800 dark:hover:bg-gray-700">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-16 w-auto text-sky-500"
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="bg-gray-50 dark:bg-slate-800">
+        <div className="bg-gray-50 dark:bg-gray-800">
           <svg
             data-name="Layer 1"
             className="text-gray-100 dark:text-slate-900"
@@ -154,7 +154,7 @@ export default function Home() {
         </div>
 
         <div
-          className="container mx-auto space-y-8 bg-gray-50 px-4 pt-16 pb-24 dark:bg-slate-800 sm:px-6 lg:px-8"
+          className="container mx-auto space-y-8 bg-gray-50 px-4 pt-16 pb-24 dark:bg-gray-800 sm:px-6 lg:px-8"
           id="preview"
         >
           <section className="mx-au container divide-y divide-gray-200">
@@ -173,7 +173,7 @@ export default function Home() {
               </h3>
               <div className="col-span-3 grid gap-6 sm:grid-cols-2 sm:gap-y-8 md:grid-cols-3 lg:gap-x-8">
                 <Link href={"/components/sections/hero"}>
-                  <a className="group relative overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black ring-opacity-5 drop-shadow-sm hover:shadow-sky-500/75 dark:bg-slate-900">
+                  <a className="group relative overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black ring-opacity-5 drop-shadow-sm hover:shadow-sky-500/75 dark:bg-gray-900">
                     <div className="relative overflow-hidden bg-gray-100 pt-[50%] dark:bg-gray-700">
                       <div className="absolute inset-0 h-full w-full overflow-hidden rounded-t-lg">
                         <img

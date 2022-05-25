@@ -26,9 +26,9 @@ function docs() {
             </nav>
           </div>
           <div className="relative col-span-3 rounded-md bg-white lg:-ml-8 lg:shadow-md">
-            <div className="absolute top-0 bottom-0 -right-4 hidden w-8 bg-white dark:bg-slate-800 lg:block"></div>
-            <div className="relative rounded-md py-16 text-gray-700 antialiased dark:bg-slate-800 dark:text-gray-200 lg:px-16">
-              <div className="mx-auto  max-w-[37.5rem]">
+            <div className="absolute top-0 bottom-0 -right-4 hidden w-8 bg-white dark:bg-gray-800 lg:block"></div>
+            <div className="relative rounded-md py-16 text-gray-700 antialiased dark:bg-gray-800 dark:text-gray-200 lg:px-16">
+              <div className="mx-auto  max-w-[37.5rem] p-2">
                 <div className="mb-4 text-xl font-bold text-gray-900 dark:text-white ">
                   Requirements
                 </div>

@@ -11,7 +11,7 @@ function privacypolicy() {
           content="Tailwindly is a powerful frontend library of tailwind components enhanced by vanilla js. It helps you build interfaces with advanced interactions and animations."
         />
       </Head>
-      <div className="-mt-32 bg-gray-100 pt-32 dark:bg-slate-900">
+      <div className="-mt-32 bg-gray-100 pt-32 dark:bg-gray-900">
         <div className="relative">
           <div className="relative mx-auto max-w-lg py-16 px-4 text-center sm:px-6 lg:py-20">
             <h1 className="sm:text-4.5xl mb-4 text-3xl font-extrabold tracking-tight text-black dark:text-white">
@@ -23,7 +23,7 @@ function privacypolicy() {
           </div>
         </div>
       </div>
-      <div className="bg-white px-4 py-14 dark:bg-slate-800 sm:py-16 lg:py-20">
+      <div className="bg-white px-4 py-14 dark:bg-gray-800 sm:py-16 lg:py-20">
         <div className="prose prose-sm mx-auto max-w-[37.5rem] text-gray-500 dark:text-gray-200">
           <p>
             This privacy policy (&quot;Policy&quot;) describes how Tailwindly.

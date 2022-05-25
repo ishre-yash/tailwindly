@@ -3,7 +3,7 @@ import Head from "next/head";
 
 function pricing() {
   return (
-    <div className="pricing-table-2 bg-gray-100 py-6 dark:bg-slate-900 md:py-12">
+    <div className="pricing-table-2 bg-gray-100 py-6 dark:bg-gray-900 md:py-12">
       <Head>
         <title>Tailwindly - Pricing</title>
         <meta
@@ -20,7 +20,7 @@ function pricing() {
 
         <div className=" mt-6 md:mt-12 lg:-mx-4 lg:flex">
           <div className="my-4 md:my-6 lg:w-2/4">
-            <div className="mx-auto max-w-sm rounded-lg border-t-4 border-solid border-white bg-white text-center transition-colors duration-300 hover:border-sky-600 dark:bg-slate-800">
+            <div className="mx-auto max-w-sm rounded-lg border-t-4 border-solid border-white bg-white text-center transition-colors duration-300 hover:border-sky-600 dark:bg-gray-800">
               <div className="p-6 md:py-8">
                 <h4 className="mb-2 text-2xl font-medium leading-tight">
                   Personal Use
@@ -52,7 +52,7 @@ function pricing() {
           </div>
 
           <div className="my-4 md:my-6 lg:w-2/4">
-            <div className="mx-auto max-w-sm rounded-lg border-t-4 border-solid border-white bg-white text-center transition-colors duration-300 hover:border-sky-600 dark:bg-slate-800">
+            <div className="mx-auto max-w-sm rounded-lg border-t-4 border-solid border-white bg-white text-center transition-colors duration-300 hover:border-sky-600 dark:bg-gray-800">
               <div className="p-6 md:py-8">
                 <h4 className="mb-2 text-2xl font-medium leading-tight">
                   Professional
