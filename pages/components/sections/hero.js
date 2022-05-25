@@ -11,6 +11,7 @@ function Hero() {
           content="Tailwindly is a powerful frontend library of tailwind components enhanced by vanilla js. It helps you build interfaces with advanced interactions and animations."
         />
       </Head>
+      <h1>Hello</h1>
     </>
   );
 }

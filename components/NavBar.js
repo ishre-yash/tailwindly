@@ -1,11 +1,22 @@
-import React from "react";
+import { React, useRef } from "react";
 import Link from "next/link";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { RiCloseCircleLine } from "react-icons/ri";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
 function NavBar() {
   const { theme, setTheme } = useTheme();
-
+  const toggleCart = () => {
+    if (ref.current.classList.contains("translate-x-full")) {
+      ref.current.classList.remove("translate-x-full");
+      ref.current.classList.add("translate-x-0");
+    } else if (!ref.current.classList.contains("translate-x-full")) {
+      ref.current.classList.remove("translate-x-0");
+      ref.current.classList.add("translate-x-full");
+    }
+  };
+  const ref = useRef();
   return (
     <>
       <header className="relative z-50 flex-none bg-gray-100 py-4 text-sm font-medium leading-6 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
@@ -110,6 +121,22 @@ function NavBar() {
                   </svg>
                 </a>
               </Link>
+
+              <HiMenuAlt3
+                className="fixed top-4 right-4 block rounded-md border border-gray-500 bg-white p-1 text-2xl shadow-md hover:text-sky-500  md:sticky md:ml-4 md:text-4xl"
+                onClick={toggleCart}
+              />
+              <div
+                ref={ref}
+                className="sidebar absolute top-0 right-0 h-screen w-72 translate-x-full transform overflow-y-scroll bg-slate-200 p-10  transition-transform scrollbar-thin scrollbar-thumb-gray-400
+        scrollbar-track-teal-100 "
+              >
+                <RiCloseCircleLine
+                  onClick={toggleCart}
+                  className="absolute top-5 right-2 mx-3 cursor-pointer text-xl hover:text-red-500"
+                ></RiCloseCircleLine>{" "}
+                <h1>tailwindly</h1>
+              </div>
             </div>
           </div>
         </nav>
