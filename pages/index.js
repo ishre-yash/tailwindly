@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -54,6 +55,11 @@ export default function Home() {
                     >
                       Try it out
                     </a>
+                    <Link href={"/"}>
+                      <a className="rounded-lg bg-gray-900 py-3 px-4 text-sm font-semibold text-gray-300 hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-700 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">
+                        All Components
+                      </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="relative mx-auto max-w-screen-sm lg:-ml-12 lg:mr-0 lg:max-w-none xl:-ml-6">
@@ -130,6 +136,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <div className="bg-gray-50 dark:bg-slate-800">
           <svg
             data-name="Layer 1"
@@ -147,7 +154,7 @@ export default function Home() {
         </div>
 
         <div
-          className="space-y-8 bg-gray-50 px-4 pt-16 pb-24 dark:bg-slate-800 sm:px-6 lg:px-8"
+          className="container mx-auto space-y-8 bg-gray-50 px-4 pt-16 pb-24 dark:bg-slate-800 sm:px-6 lg:px-8"
           id="preview"
         >
           <section className="mx-au container divide-y divide-gray-200">
@@ -165,48 +172,69 @@ export default function Home() {
                 Components
               </h3>
               <div className="col-span-3 grid gap-6 sm:grid-cols-2 sm:gap-y-8 md:grid-cols-3 lg:gap-x-8">
-                <a
-                  href="/components/sections/hero.html"
-                  className="group relative overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black ring-opacity-5 drop-shadow-sm hover:shadow-sky-500/75 dark:bg-slate-900"
+                <Link href={"/components/sections/hero"}>
+                  <a className="group relative overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black ring-opacity-5 drop-shadow-sm hover:shadow-sky-500/75 dark:bg-slate-900">
+                    <div className="relative overflow-hidden bg-gray-100 pt-[50%] dark:bg-gray-700">
+                      <div className="absolute inset-0 h-full w-full overflow-hidden rounded-t-lg">
+                        <img
+                          src="/home/design.svg"
+                          alt=""
+                          className="absolute inset-0 h-full w-full"
+                        />
+                      </div>
+                    </div>
+                    <div className="py-3 px-4">
+                      <p className="mb-1 text-sm font-medium text-gray-900 dark:text-gray-100">
+                        Hero Sections
+                      </p>
+                      <p className="text-xs font-medium text-gray-500 dark:text-gray-200">
+                        1 components
+                      </p>
+                    </div>
+                  </a>
+                </Link>
+
+                {/* <a
+                  href="/"
+                  className="group relative overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black ring-opacity-5"
                 >
-                  <div className="relative overflow-hidden bg-gray-100 pt-[50%] dark:bg-gray-700">
+                  <div className="relative overflow-hidden bg-gray-100 pt-[50%]">
                     <div className="absolute inset-0 h-full w-full overflow-hidden rounded-t-lg">
                       <img
-                        src="/home/design.svg"
+                        src="/img/category-thumbnails/marketing/pricing.png"
                         alt=""
                         className="absolute inset-0 h-full w-full"
                       />
                     </div>
                   </div>
                   <div className="py-3 px-4">
-                    <p className="mb-1 text-sm font-medium text-gray-900 dark:text-gray-100">
-                      Hero Sections
+                    <p className="mb-1 text-sm font-medium text-gray-900">
+                      Pricing Sections
                     </p>
-                    <p className="text-xs font-medium text-gray-500 dark:text-gray-200">
-                      1 components
+                    <p className="text-xs font-medium text-gray-500">
+                      9 components
+                    </p>
+                    <p className="absolute top-3 right-3 z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-30 p-1 text-white">
+                      <span className="sr-only">
+                        PNG previews only, upgrade to get the HTML.
+                      </span>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="h-6 w-6"
+                      >
+                        <path
+                          d="M5.75 11.75a1 1 0 011-1h10.5a1 1 0 011 1v5.5a2 2 0 01-2 2h-8.5a2 2 0 01-2-2v-5.5zM7.75 10.5v-.157c0-1.562-.094-3.302.996-4.42C9.368 5.288 10.374 4.75 12 4.75c1.626 0 2.632.537 3.254 1.174 1.09 1.117.996 2.857.996 4.419v.157"
+                          stroke="#fff"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                      </svg>
                     </p>
                   </div>
-                </a>
-
-                {/* <a href="/" class="group relative bg-white rounded-lg shadow-sm overflow-hidden ring-1 ring-black ring-opacity-5">
-                            <div class="relative bg-gray-100 pt-[50%] overflow-hidden">
-                                <div class="absolute inset-0 w-full h-full rounded-t-lg overflow-hidden">
-                                    <img src="/img/category-thumbnails/marketing/pricing.png" alt="" class="absolute inset-0 w-full h-full">
-                                </div>
-                            </div>
-                            <div class="py-3 px-4">
-                                <p class="text-sm font-medium text-gray-900 mb-1">
-                                    Pricing Sections
-                                </p>
-                                <p class="text-xs font-medium text-gray-500">9 components</p>
-                                <p class="absolute z-10 top-3 right-3 text-white bg-gray-900 bg-opacity-30 rounded-full flex items-center justify-center p-1">
-                                    <span class="sr-only">PNG previews only, upgrade to get the HTML.</span>
-                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="w-6 h-6">
-              <path d="M5.75 11.75a1 1 0 011-1h10.5a1 1 0 011 1v5.5a2 2 0 01-2 2h-8.5a2 2 0 01-2-2v-5.5zM7.75 10.5v-.157c0-1.562-.094-3.302.996-4.42C9.368 5.288 10.374 4.75 12 4.75c1.626 0 2.632.537 3.254 1.174 1.09 1.117.996 2.857.996 4.419v.157" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-                                </p>
-                            </div>
-                        </a> */}
+                </a> */}
               </div>
             </div>
           </section>

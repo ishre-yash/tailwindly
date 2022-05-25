@@ -8,9 +8,9 @@ function NavBar() {
 
   return (
     <>
-      <header className="bg-gray-100 dark:bg-gray-900 flex-none relative z-50 text-sm leading-6 font-medium text-gray-900 dark:text-gray-100 py-4">
+      <header className="relative z-50 flex-none bg-gray-100 py-4 text-sm font-medium leading-6 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
         <nav className=" max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center flex-wrap sm:flex-nowrap  ">
+          <div className="container mx-auto flex flex-wrap items-center sm:flex-nowrap  ">
             <Link href={"/"}>
               <a className="flex-none text-black dark:text-white">
                 <span className="sr-only">tailwindly</span>
@@ -48,21 +48,21 @@ function NavBar() {
                 </svg>
               </a>
             </Link>
-            <div className="w-full flex-none mt-4 sm:mt-0 sm:w-auto sm:ml-auto flex items-center">
+            <div className="mt-4 flex w-full flex-none items-center sm:mt-0 sm:ml-auto sm:w-auto">
               <Link href={"/docs"}>
                 <a className="hover:text-gray-400">
-                  <span className="sm:inline mx-4">Docs</span>
+                  <span className="mx-4 sm:inline">Docs</span>
                 </a>
               </Link>
               <Link href={"/pricing"}>
                 <a className="mx-4 hover:text-gray-400">Pricing</a>
               </Link>
 
-              <a className="group border-l pl-6 border-gray-700 hover:text-sky-400 flex items-center">
+              <a className="group flex items-center border-l border-gray-700 pl-6 hover:text-sky-400">
                 <button
                   aria-label="Toggle Dark Mode"
                   type="button"
-                  className="w-5 h-5 md:w-5 md:h-5 flex items-center  "
+                  className="flex h-5 w-5 items-center md:h-5 md:w-5  "
                   onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 >
                   {theme === "dark" ? (
@@ -98,11 +98,11 @@ function NavBar() {
               </a>
 
               <Link href={"https://github.com/ishre-yash/tailwindly"}>
-                <a className="ml-4 block dark:text-gray-100 hover:text-gray-400 dark:hover:text-slate-300">
+                <a className="ml-4 block hover:text-gray-400 dark:text-gray-100 dark:hover:text-slate-300">
                   <span className="sr-only">tailwindly on GitHub</span>
                   <svg
                     viewBox="0 0 16 16"
-                    className="w-5 h-5"
+                    className="h-5 w-5"
                     fill="currentColor"
                     aria-hidden="true"
                   >

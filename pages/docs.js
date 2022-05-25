@@ -8,13 +8,12 @@ function docs() {
         <title>Tailwindly - Docs</title>
         <meta
           name="description"
-          content="Tailwindly is a powerful frontend library of tailwind components enhanced by vanilla js. It helps you build interfaces with advanced interactions and animations."
+          content="Documentation For Using tailwindly library."
         />
-        s
       </Head>
-      <div className="max-w-container relative mx-auto flex w-full px-4 sm:px-6 lg:px-8">
-        <div className="w-full flex-none lg:grid lg:grid-cols-4 lg:gap-8">
-          <div className="-mx-4 bg-gray-50 py-12 px-4 sm:-mx-6 sm:py-16 sm:px-6 lg:mx-0 lg:bg-transparent lg:pl-0 lg:pr-8">
+      <div className="max-w-container relative mx-auto flex w-full px-4 dark:bg-gray-900 sm:px-6 lg:px-8">
+        <div className="container mx-auto w-full flex-none lg:grid lg:grid-cols-4 lg:gap-8">
+          <div className="-mx-4 bg-gray-50 py-12 px-4 dark:bg-gray-900 sm:-mx-6 sm:py-16 sm:px-6 lg:mx-0 lg:bg-transparent lg:pl-0 lg:pr-8">
             <nav className="relative mx-auto max-w-[37.5rem] text-sm lg:sticky lg:top-10 lg:mx-0 lg:max-w-none">
               <ul className="space-y-3">
                 <li className="-ml-px block border-l border-current pl-4 text-lg font-semibold text-sky-500 dark:text-sky-400">
@@ -26,18 +25,20 @@ function docs() {
               </ul>
             </nav>
           </div>
-          <div className="relative col-span-3 bg-white lg:-ml-8 lg:shadow-md">
+          <div className="relative col-span-3 rounded-md bg-white lg:-ml-8 lg:shadow-md">
             <div className="absolute top-0 bottom-0 -right-4 hidden w-8 bg-white dark:bg-slate-800 lg:block"></div>
-            <div className="relative py-16 text-gray-700 antialiased dark:bg-slate-800 dark:text-gray-200 lg:px-16">
+            <div className="relative rounded-md py-16 text-gray-700 antialiased dark:bg-slate-800 dark:text-gray-200 lg:px-16">
               <div className="mx-auto  max-w-[37.5rem]">
-                <div className="mb-4 text-xl font-bold">Requirements</div>
+                <div className="mb-4 text-xl font-bold text-gray-900 dark:text-white ">
+                  Requirements
+                </div>
                 <p>
                   All of the components in Tailwindly are designed for Tailwind
                   CSS v3. To make sure that you are on the latest version of
                   Tailwind, update via npm:
                 </p>
 
-                <pre className="bash my-4">
+                <pre className="bash my-4 rounded-xl bg-gray-700 p-4 text-white">
                   <code className="bash">npm install tailwindcss@latest</code>
                 </pre>
                 <p className="my-2">
@@ -59,7 +60,7 @@ function docs() {
                   >
                     read the Tailwind CSS documentation
                   </a>{" "}
-                  as well to get the most out of Tailwind UI.
+                  as well to get the most out of tailwindly.
                 </p>
               </div>
             </div>
