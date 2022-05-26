@@ -1,13 +1,46 @@
 import { React, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { AiOutlineEye } from "react-icons/ai";
 import { BsCode } from "react-icons/bs";
+import { MdOutlineContentCopy } from "react-icons/md";
 
 function Hero() {
   const [show, setShow] = useState(true);
+  const copyClipboard = () =>
+    toast.success("Copied to Clipboard", {
+      position: "top-right",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+  const Hero1 = `<section class="text-gray-600">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <!-- 720X600        -->
+      <img class="object-cover object-center rounded" alt="IMAGE alt" src="https://images.ctfassets.net/dei6wzp97edh/6DWC7yS67JEIxTIqDP0vWr/89ad2eb71f47839648b36567bfc75d3b/umi.jpg" width="720" height="600" />
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Aenean convallis, massa eu rhoncus.
+      </h1>
+      <p class="mb-8 leading-relaxed">Quisque at lectus ultricies, varius sapien in, posuere massa. Vivamus eu convallis massa, et sollicitudin neque. Donec sed risus in sem malesuada mattis. Pellentesque in.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg">Button</button>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+      </div>
+    </div>
+  </div>
+</section>`;
   return (
     <>
+      <ToastContainer />
       <Head>
         <title>Tailwindly - Hero</title>
         <meta
@@ -66,39 +99,38 @@ function Hero() {
               <BsCode className="mx-2 text-lg text-gray-500" />
               Code
             </button>
+            <button
+              className="m-2 rounded-full bg-white  p-2 text-xl hover:text-green-600"
+              onClick={() => {
+                copyClipboard();
+                navigator.clipboard.writeText(Hero1);
+              }}
+            >
+              <MdOutlineContentCopy />
+            </button>
           </div>
         </div>
 
         {show ? (
           <iframe
-            src="https://ishre-yash.github.io/TextUtils-ShreYash/"
-            className="h-[250px] w-full rounded-lg border border-sky-500 md:h-[500px]"
-            title="TextUtils"
+            src="https://codepen.io/ishreyash/embed/QWQOBoO?default-tab=result&theme-id=dark"
+            frameBorder="no"
+            loading="lazy"
+            allowtransparency="true"
+            allowFullScreen="true"
+            className=" h-[500px] w-full rounded-lg border border-gray-900 shadow-lg dark:border-gray-100"
+            title="HERO 01"
           ></iframe>
         ) : (
-          <div className="h-[250px] w-full overflow-auto rounded-lg border border-gray-900  md:h-[500px]">
-            <pre>
-              <code className="language-html scrolling-touch inline-block p-4 subpixel-antialiased">
-                {`<section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
-    </div>
-    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-        <br class="hidden lg:inline-block">readymade gluten
-      </h1>
-      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-      <div class="flex justify-center">
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
-      </div>
-    </div>
-  </div>
-</section>`}
-              </code>
-            </pre>
-          </div>
+          <>
+            <div className=" h-[500px] w-full overflow-auto rounded-lg border border-gray-900 bg-gray-800 text-gray-100">
+              <pre>
+                <code className="language-html scrolling-touch inline-block p-4 subpixel-antialiased">
+                  {Hero1}
+                </code>
+              </pre>
+            </div>
+          </>
         )}
       </div>
     </>
