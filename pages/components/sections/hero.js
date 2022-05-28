@@ -20,6 +20,13 @@ function Hero() {
       draggable: true,
       progress: undefined,
     });
+  const fetchData = async () => {
+    let d = await fetch("http://localhost:3000/api/hero");
+    let data = await d.json();
+    return data.hero;
+  };
+  let data = fetchData();
+  console.log(data);
 
   const Hero1 = `<section class="text-gray-600">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -83,54 +90,62 @@ function Hero() {
             </Link>
           </nav>
         </div>
-        <div className="my-4 flex flex-none items-center">
-          <div
-            onClick={() => setShow(!show)}
-            className="group flex space-x-4 rounded-lg bg-gray-100 p-1 hover:bg-gray-200 dark:bg-gray-800 hover:dark:bg-gray-700"
-          >
-            <button className="flex items-center justify-center rounded-lg bg-white p-1.5 pr-4 font-semibold tracking-tighter dark:bg-black">
-              <AiOutlineEye className="mx-2 text-lg text-sky-500" />
-              Preview
-            </button>
-            <button
-              onClick={() => setShow(!show)}
-              className="flex items-center justify-center rounded-lg p-1.5 pr-4 font-semibold tracking-tighter focus:bg-white dark:focus:bg-black"
-            >
-              <BsCode className="mx-2 text-lg text-gray-500" />
-              Code
-            </button>
-            <button
-              className="m-2 rounded-full bg-white  p-2 text-xl hover:text-green-600"
-              onClick={() => {
-                copyClipboard();
-                navigator.clipboard.writeText(Hero1);
-              }}
-            >
-              <MdOutlineContentCopy />
-            </button>
-          </div>
-        </div>
 
-        {show ? (
-          <iframe
-            src="https://codepen.io/ishreyash/embed/QWQOBoO?default-tab=result&theme-id=dark"
-            frameBorder="no"
-            allowtransparency="true"
-            allowFullScreen={true}
-            className=" h-[500px] w-full rounded-lg border border-gray-900 shadow-lg dark:border-gray-100"
-            title="HERO 01"
-          ></iframe>
-        ) : (
-          <>
-            <div className=" h-[500px] w-full overflow-auto rounded-lg border border-gray-900 bg-gray-800 text-gray-100">
-              <pre>
-                <code className="language-html scrolling-touch inline-block select-all p-4 subpixel-antialiased">
-                  {Hero1}
-                </code>
-              </pre>
+        <section>
+          <div className="mb-3 flex items-center whitespace-nowrap">
+            <h2 className="items-center justify-center truncate font-medium text-gray-900">
+              Hero 01
+            </h2>
+            <div className="my-4 ml-auto flex flex-none items-center">
+              <div
+                onClick={() => setShow(!show)}
+                className="group flex space-x-4 rounded-lg bg-gray-100 p-1 hover:bg-gray-200 dark:bg-gray-800 hover:dark:bg-gray-700"
+              >
+                <button className="flex items-center justify-center rounded-lg bg-white p-1.5 pr-4 font-semibold tracking-tighter dark:bg-black">
+                  <AiOutlineEye className="mx-2 text-lg text-sky-500" />
+                  Preview
+                </button>
+                <button
+                  onClick={() => setShow(!show)}
+                  className="flex items-center justify-center rounded-lg p-1.5 pr-4 font-semibold tracking-tighter focus:bg-white dark:focus:bg-black"
+                >
+                  <BsCode className="mx-2 text-lg text-gray-500" />
+                  Code
+                </button>
+                <button
+                  className="m-2 rounded-full bg-white  p-2 text-xl hover:text-green-600"
+                  onClick={() => {
+                    copyClipboard();
+                    navigator.clipboard.writeText(Hero1);
+                  }}
+                >
+                  <MdOutlineContentCopy />
+                </button>
+              </div>
             </div>
-          </>
-        )}
+          </div>
+
+          {show ? (
+            <iframe
+              src="https://codepen.io/ishreyash/embed/QWQOBoO?default-tab=result&theme-id=dark"
+              frameBorder="no"
+              allowtransparency="true"
+              allowFullScreen={true}
+              className=" h-[500px] w-full rounded-lg border border-gray-900 shadow-lg dark:border-gray-100"
+              title="HERO 01"
+            ></iframe>
+          ) : (
+            <>
+              <div className=" h-[500px] w-full overflow-auto rounded-lg border border-gray-900 bg-gray-800 text-gray-100">
+                <pre>
+                  <code className="language-html scrolling-touch inline-block select-all p-4 subpixel-antialiased">
+                    {Hero1}
+                  </code>
+                </pre>
+              </div>
+            </>
+          )}
+        </section>
       </div>
     </>
   );
