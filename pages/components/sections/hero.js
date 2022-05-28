@@ -115,9 +115,8 @@ function Hero() {
           <iframe
             src="https://codepen.io/ishreyash/embed/QWQOBoO?default-tab=result&theme-id=dark"
             frameBorder="no"
-            loading="lazy"
             allowtransparency="true"
-            allowFullScreen="true"
+            allowFullScreen={true}
             className=" h-[500px] w-full rounded-lg border border-gray-900 shadow-lg dark:border-gray-100"
             title="HERO 01"
           ></iframe>
@@ -125,7 +124,7 @@ function Hero() {
           <>
             <div className=" h-[500px] w-full overflow-auto rounded-lg border border-gray-900 bg-gray-800 text-gray-100">
               <pre>
-                <code className="language-html scrolling-touch inline-block p-4 subpixel-antialiased">
+                <code className="language-html scrolling-touch inline-block select-all p-4 subpixel-antialiased">
                   {Hero1}
                 </code>
               </pre>
@@ -135,6 +134,12 @@ function Hero() {
       </div>
     </>
   );
+}
+
+export async function getServerSideProps(context) {
+  return {
+    props: { products: JSON.parse(JSON.stringify(tshirts)) },
+  };
 }
 
 export default Hero;
