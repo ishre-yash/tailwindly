@@ -136,10 +136,4 @@ function Hero() {
   );
 }
 
-export async function getServerSideProps(context) {
-  return {
-    props: { products: JSON.parse(JSON.stringify(tshirts)) },
-  };
-}
-
 export default Hero;
